@@ -1,0 +1,107 @@
+[{
+	"data": {
+		"stageStatuses": [{
+			"appId": "ffe3d2eb-a2da-44f1-89b6-541bb5818984",
+			"envId": "8426fba9-2952-4f75-ab75-ef29ccbef0ad",
+			"version": {
+				"name": "1"
+			},
+			"status": "ok",
+			"completedAt": 1655535601760
+		}, {
+			"appId": "ffe3d2eb-a2da-44f1-89b6-541bb5818984",
+			"envId": "15619607-e591-4db8-86d4-807a8bf6ffc5",
+			"version": {
+				"name": "1"
+			},
+			"status": "ok",
+			"completedAt": 1655535788732
+		}, {
+			"appId": "ffe3d2eb-a2da-44f1-89b6-541bb5818984",
+			"envId": "a49d9eb8-1b47-4582-814d-1ba95147f501",
+			"version": {
+				"name": "1"
+			},
+			"status": "ok",
+			"completedAt": 1655535857372
+		}, {
+			"appId": "9803fc68-4640-4f07-a1bd-7685f922bc46",
+			"envId": "8426fba9-2952-4f75-ab75-ef29ccbef0ad",
+			"version": null,
+			"status": null,
+			"completedAt": null
+		}, {
+			"appId": "9803fc68-4640-4f07-a1bd-7685f922bc46",
+			"envId": "15619607-e591-4db8-86d4-807a8bf6ffc5",
+			"version": null,
+			"status": null,
+			"completedAt": null
+		}, {
+			"appId": "9803fc68-4640-4f07-a1bd-7685f922bc46",
+			"envId": "a49d9eb8-1b47-4582-814d-1ba95147f501",
+			"version": null,
+			"status": null,
+			"completedAt": null
+		}]
+	}
+}, {
+	"data": {
+		"pipeline": {
+			"_id": "f673caad-f7eb-4590-a4ac-53f829bc11a9",
+			"name": "Sample pipeline",
+			"stages": [{
+				"_id": "d6308128-df20-48eb-9169-8be7a40b7e67",
+				"name": "Input",
+				"type": "input"
+			}, {
+				"_id": "8426fba9-2952-4f75-ab75-ef29ccbef0ad",
+				"name": "DEV",
+				"type": "deploy"
+			}, {
+				"_id": "15619607-e591-4db8-86d4-807a8bf6ffc5",
+				"name": "QA",
+				"type": "deploy"
+			}, {
+				"_id": "a49d9eb8-1b47-4582-814d-1ba95147f501",
+				"name": "PROD",
+				"type": "deploy"
+			}],
+			"created": 1655535106770,
+			"applications": [{
+				"_id": "ffe3d2eb-a2da-44f1-89b6-541bb5818984",
+				"name": "First Microservice",
+				"type": "api_driven",
+				"description": "Controlada por API",
+				"external_id": "ffe3d2eb-a2da-44f1-89b6-541bb5818984"
+			}, {
+				"_id": "9803fc68-4640-4f07-a1bd-7685f922bc46",
+				"name": "Second Microservice",
+				"type": "api_driven",
+				"description": "Controlada por API",
+				"external_id": "9803fc68-4640-4f07-a1bd-7685f922bc46"
+			}],
+			"team": {
+				"id": "5ade13625558f2c6688d15ce",
+				"name": "Default Team"
+			}
+		}
+	}
+}, {
+	"data": {
+		"stageVersions": [{
+			"appId": "ffe3d2eb-a2da-44f1-89b6-541bb5818984",
+			"appName": "First Microservice",
+			"versions": [{
+				"versionName": "2",
+				"versionId": "62aead60e01f5800189da26b"
+			}, {
+				"versionName": "1",
+				"versionId": "62ad779be01f5800189da25b"
+			}]
+		}, {
+			"appId": "9803fc68-4640-4f07-a1bd-7685f922bc46",
+			"appName": "Second Microservice",
+			"versions": []
+		}]
+	}
+}]
